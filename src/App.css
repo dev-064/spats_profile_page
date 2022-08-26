@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  color: white;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  padding: 0.2em;
+  border: 2px solid white;
+}
+
+body {
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  background-image: url("https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.8;
+  position: absolute;
+  inset: 0;
+}
+
+.parent {
+  margin: 2em 0em;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.354);
+  padding: 0.5em 0em;
+  border: 1px solid white;
+
+
+  /* background: rgb(97, 3, 109); */
+  /* background: radial-gradient(circle, rgba(97, 3, 109, 1) 0%, rgba(23, 4, 91, 1) 89%, rgba(14, 2, 58, 1) 100%); */
+
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-family: 'Times New Roman', Times, serif;
+  /* outline:1px solid white; */
+  /* background-color: rgb(100, 98, 98, 0.57); */
+  background: rgb(63, 2, 71);
+  background: radial-gradient(circle, rgba(63, 2, 71, 1) 0%, rgba(14, 2, 56, 1) 89%, rgba(14, 2, 58, 1) 100%);
+  margin: 1em;
+  font-size: 1.1em;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  outline: 1px solid rgb(0, 0, 0);
+  padding: 1em 2em;
+  font-size: 1.3em;
+  /* background-color: rgba(0, 0, 0, 0.354); */
+  /* background-color: rgba(16, 5, 40, 0.5); */
+  background: rgb(63, 2, 71);
+  background: radial-gradient(circle, rgba(63, 2, 71, 1) 0%, rgba(14, 2, 56, 1) 89%, rgba(14, 2, 58, 1) 100%);
+  margin: 1em;
+
+}
+
+.container2 div {
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+.personal_info {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* outline:1px solid white; */
+  padding: 0em 1em;
+  line-height: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+
+}
+
+.gravatar {
+  padding: 1em;
+  /* outline:1px solid white; */
+}
+
+/* .information{
+  outline:1px solid white;
+
+} */
+
+
+
+/* scrollbar styling */
+.information::-webkit-scrollbar {
+  /* display: none; */
+  background-color: rgb(236, 122, 0);
+  width: 10px;
+}
+
+.information::-webkit-scrollbar-thumb {
+  background-color: rgb(139, 0, 253);
+  border-radius: 20px;
+}
+
+.personal_info>div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* teams page styling */
+
+.event-name{
+  text-align: center;
+  padding: 2em;
+}
+.team-members{
+  display: flex;
+  justify-content: space-evenly;
+}
+.name>p{
+  padding: 1em;
+}
+.members-id>p{
+  padding: 1em;
+}
